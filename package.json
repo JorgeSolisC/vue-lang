@@ -1,0 +1,28 @@
+{
+  "name": "vue-locale",
+  "version": "0.1.0",
+  "description": "Vue.js i18n language integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kvdmolen/vue-locale"
+  },
+  "keywords": [
+    "translation",
+    "translate",
+    "mixin",
+    "vuejs",
+    "vue",
+    "lang",
+    "i18n"
+  ],
+  "author": "kvdmolen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kvdmolen/vue-locale/issues"
+  },
+  "homepage": "https://github.com/kvdmolen/vue-locale"
+}
