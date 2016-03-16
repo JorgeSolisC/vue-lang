@@ -1,6 +1,6 @@
 {
   "name": "vue-lang",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Vue.js i18n language integration",
   "main": "index.js",
   "scripts": {
