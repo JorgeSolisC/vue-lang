@@ -30,11 +30,17 @@ Where `en.json` is defined as:
 
 ## Usage
 
-In HTML:
+```js
+{
+    data: {
+        countmsg: 5
+    }
+}
+```
 
 ```html
 <p>Hello {{$lang.hello}}</p>
-<p>{{$lang.messages | replace 5 "new"}}</p>
+<p>{{$lang.messages | replace countmsg "new"}}</p>
 ```
 
 Result:
@@ -45,8 +51,17 @@ Result:
 ```
 
 
-Change Language (reactive)
+Change Language (reactive):
+
 ```js
 Vue.$setLang("nl")
 this.$setLang("nl")
+```
+
+Available Languages:
+
+```html
+<ul>
+  <li v-for="lang in $langs">{{lang}}</li>
+</ul>
 ```

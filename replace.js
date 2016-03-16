@@ -1,5 +1,5 @@
 /**
- * Replace {} in message. Thanks to Haixing Hu.
+ * Replace {0} in message. Thanks to Haixing Hu.
  *
  * @param template
  *    the message template, which contains zero or more placeholders, e.g.,
@@ -9,7 +9,7 @@
  *    in the message template.
  * @return
  *    the formatted message.
- * @author kvdmolen
+ * @author Haixing Hu
  */
 
 var PLACEHOLDER_REGEXP = /\{([0-9a-zA-Z]+)\}/g;

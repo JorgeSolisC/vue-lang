@@ -24,6 +24,8 @@
 
         Vue.prototype.$lang = Vue.locales[lang]
 
+        Vue.prototype.$langs = Object.keys(Vue.locales)
+
         Vue.prototype.$setLang = function(language) {
             Vue.prototype.$lang = Vue.locales[language]
             update(this.$root);
