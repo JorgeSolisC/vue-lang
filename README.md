@@ -2,7 +2,9 @@
 
 ## Installation
 
-`$ npm install vue-lang --save`
+```
+$ npm install vue-lang --save
+```
 
 ## Setup
 
@@ -11,8 +13,8 @@ var Vue = require('vue');
 var Lang = require('vue-lang');
 
 var locales = {
-    "en": require("./locale/en.json"),
-    "nl": require("./locale/nl.json")
+  "en": require("./locale/en.json"),
+  "nl": require("./locale/nl.json")
 }
 
 Vue.use(Lang, {lang: 'en', locales: locales})
@@ -30,20 +32,24 @@ Where `en.json` is defined as:
 
 ## Usage
 
-```js
-{
-    data: {
-        countmsg: 5
-    }
-}
-```
+### Language output
 
 ```html
 <p>Hello {{$lang.hello}}</p>
 <p>{{$lang.messages | replace countmsg "new"}}</p>
 ```
 
-Result:
+With:
+
+```js
+{
+  "data": {
+    "countmsg": 5
+  }
+}
+```
+
+Results in:
 
 ```html
 <p>Hello World</p>
@@ -51,17 +57,17 @@ Result:
 ```
 
 
-Change Language (reactive):
+### Change Language (reactive)
 
 ```js
 Vue.$setLang("nl")
 this.$setLang("nl")
 ```
 
-Available Languages:
+### Available Languages
 
 ```html
 <ul>
-  <li v-for="lang in $langs">{{lang}}</li>
+  <li v-for="lang in $langs" @click="$setLang(lang)">{{lang}}</li>
 </ul>
 ```
