@@ -80,4 +80,4 @@ this.$setLang("nl")
 
 ## Credits
 
-[@Haixing-Hu](https://github.com/Haixing-Hu/)
+[@Haixing-Hu](https://github.com/Haixing-Hu/) & [@kazupon](https://github.com/kazupon/) for inspiration
