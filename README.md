@@ -71,3 +71,13 @@ this.$setLang("nl")
   <li v-for="lang in $langs" @click="$setLang(lang)">{{lang}}</li>
 </ul>
 ```
+
+### Parse Path (Reactive) (TODO)
+
+```html
+<p>Hello {{$l('cities.amsterdam'}}</p>
+```
+
+## Credits
+
+[@Haixing-Hu](https://github.com/Haixing-Hu/)

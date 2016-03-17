@@ -1,5 +1,5 @@
 /**
- * Replace {0} in message. Thanks to Haixing Hu.
+ * Replace {0} in message. Credits: @Haixing-Hu
  *
  * @param template
  *    the message template, which contains zero or more placeholders, e.g.,
